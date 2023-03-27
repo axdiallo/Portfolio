@@ -1,0 +1,314 @@
+/* Base */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: white;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000;
+    line-height: 1;
+}
+
+h2, .h2 {
+    font-size: 2.8rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.list-unstyled {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+-d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grid__item {
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Section */
+
+section {
+    padding: 5.5rem 0;
+}
+
+
+
+
+.section-title {
+    margin-top: 0;
+    font-size: 3.8rem;
+    text-transform: uppercase;
+}
+
+
+
+@media screen and (max-width:749px) {
+    .section-header {
+        text-align: center;
+
+    }
+
+}
+
+
+.header {
+    
+    background: #FFFFFF;
+    border-bottom: 1px solid #EEE;
+    
+}
+
+.header .logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.navbar {
+    display: none;
+}
+
+.header li {
+    display:inline-flex;
+    align-items: center;
+    padding: 0 .5rem;
+}
+
+.header a {
+    color: #000;
+}
+
+a:hover {
+    color: red;
+}
+
+.header .right {
+    display: flex;
+    align-item: center;
+}
+
+.socials {
+    display: flex;
+}
+
+.socials a {
+    padding: 0 2px;
+}
+
+.socials .icon {
+    height: 18px;
+
+}
+
+.burger {
+    background: none;
+    border: none;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    position: relative;
+    margin-left: 1rem;
+}
+
+.burger .bar {
+    display: black;
+    width: 22px;
+    height: 3px;
+    background: #333;
+}
+
+.burger .bar::before, .burger .bar::after {
+    display: block;
+    content:"";
+    width: 22px;
+    height: 3px;
+    background: #333;
+    position: absolute;
+    top:0;
+}
+
+.burger .bar::before {
+    transform: translateY(-8px);
+}
+
+.burger .bar::after {
+    transform: translateY(-8px)
+}
+
+
+
+
+@media screen and (min-width:750px) {
+    .navbar {
+        display: flex;
+    }
+    .burger {
+        display: none;
+    }
+}
+
+.hero {
+    background: #5b6c78;
+    color: #FFF;
+    padding: 1rem 0 0 0;
+}
+
+.hero .title {
+    color: inherit;
+    font-size: 5rem;
+    margin: 1.6rem 0 0 0;
+
+}
+.hero__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__item span {
+    text-transform: uppercase;
+}
+
+.hero .grid {
+    justify-content: center;
+
+}
+
+
+@media screen and (min-width:750px) {
+    .hero__item .left {
+        order: 2;
+    }
+    
+    .hero__item .right {
+        order: 1;
+    }
+}
+
+@media screen and (min-width:750px) {
+    .hero__item {
+        flex:1 0 50px;
+        
+        text-align: left;
+    }
+
+    .hero__item .left {
+        align-items: flex-start;
+    }
+
+    .hero__title {
+        font-size: 4rem;
+        margin: 1.6rem 0 0 0;
+    }
+
+    .hero__avatar img {
+        max-width: 400px;
+        border-radius: 50%;
+    }
+}
+
+.about {
+    padding-top: ;
+}
+
+.about section {
+    margin-top: 0;
+}
+
+.about .section-title {
+    margin-top: 2.8rem;
+}
+
+@media screen and (min-width: 750px) {
+    .about img {
+        margin-top: 2.8rem;
+    }
+}
+
+.services {
+    background: #F5F5F5;
+}
+
+.service {
+    text-align: center;
+}
+
+.service__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    
+    border: 2px solid #F5F5F5;
+    border-radius: 50%;
+}
+
+.service__icon svg {
+    height: 35px;
+}
+
+@media screen and (max-width=749px) {
+    .service {
+        text-align: center;
+    }
+    .service__icon {
+        margin:0 auto;
+    }
+}
+
+@media screen and (min-width:750px) {
+    .service {
+        display: flex
+    }
+    
+}
+
+.toto {
+    color: #555;
+}
+
+/* Global */
